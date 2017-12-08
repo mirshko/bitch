@@ -1,0 +1,23 @@
+{
+  "name": "bitch",
+  "version": "1.0.0",
+  "description": "bitch.coffee",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirshko/bitch.git"
+  },
+  "keywords": [
+    "Bitch",
+    "Coffee"
+  ],
+  "author": "Jeff Reiner <jeff@reiner.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mirshko/bitch/issues"
+  },
+  "homepage": "https://github.com/mirshko/bitch#readme"
+}
