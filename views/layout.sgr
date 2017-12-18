@@ -26,8 +26,16 @@ html
     link(rel='stylesheet' href='//fonts.googleapis.com/css?family=Spectral:800')
 
   body
-    main(role='main' id='{{ pageId }}')
+    block(name='header')
+      header
+        h1 Bitch
+        h2 Coffee
+
+    main.-valign(role='main' id='{{ pageId }}')
       block(name='content')
+
+    footer
+      p.-centered © 2017 Bitch Coffee
 
     // block(name='javascript')
     //   script(src='js/main.js' defer)

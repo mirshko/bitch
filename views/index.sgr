@@ -1,6 +1,4 @@
 extends(src='layout.sgr')
   block(name='content')
-    header
-      h1 Bitch
-      h2 Coffee
-      p © 2017 Bitch Coffee
+    .container
+      include(src="_form.sgr")

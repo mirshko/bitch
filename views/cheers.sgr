@@ -1,0 +1,13 @@
+extends(src='layout.sgr')
+  block(name='header')
+    header.-smaller
+      h1 Bitch
+      h2 Coffee
+  block(name='title')
+    title Cheers!
+  block(name='content')
+    .container
+      img.-centered(style="width: 320px;" src="https://media.giphy.com/media/l42P7LGjW2aGRfvXy/giphy.gif")
+      p.emoji.-centered 🎉
+      .btn-wrapper
+        a.btn.-expand(href="/") Phone Home

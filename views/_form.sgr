@@ -1,0 +1,14 @@
+form.form(name="hey" netlify netlify-honeypot="mr-roboto" action="cheers")
+  .field.-hidden
+    input(name="mr-roboto")
+  .field
+    label Who you? 🤔
+    input(type="text" name="name" required)
+  .field
+    label What ya email? 💌
+    input(type="email" name="email" required)
+  .field
+    label Say something nice 😍
+    textarea(name="message" required)
+  .field.-btn
+    button.btn.-expand(type="submit") Send
