@@ -25,21 +25,19 @@ html
     link(rel='stylesheet' href='css/index.css')
     link(rel='stylesheet' href='//fonts.googleapis.com/css?family=Spectral:800')
 
-  body
-    block(name='header')
-      header
-        a(href='/')
-          h1
-            | Bitch
-            span Coffee
+  body.layout(id='{{ pageId }}')
+    block(name='sidebar')
+      aside.sidebar
+        .item
+          h1.brand
+            a(href='/')
+              | Bitch
+              span Coffee
+        .item
+          a.a(href='/') Home
+        .item
+          a.a(href='/contact') Contact
+        .item
+          a.a(href='//www.instagram.com/bitch.coffee/') Instagram
 
-    main.-valign(role='main' id='{{ pageId }}')
-      block(name='content')
-
-    footer
-      p.-centered © 2017 Bitch Coffee
-      p.-centered
-        a(href="/contact") Contact us
-
-    // block(name='javascript')
-    //   script(src='js/main.js' defer)
+    block(name='content')

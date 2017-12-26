@@ -1,15 +1,11 @@
 extends(src='layout.sgr')
-  block(name='header')
-    header.-smaller
-      a(href='/')
-        h1
-          | Bitch
-          span Coffee
   block(name='title')
-    title Cheers!
+    title Cheers! | Bitch Coffee
   block(name='content')
-    .container
-      img.-centered(style="width: 320px;" src="https://media.giphy.com/media/l42P7LGjW2aGRfvXy/giphy.gif")
-      p.emoji.-centered 🎉
-      .btn-wrapper
-        a.btn.-expand(href="/") Phone Home
+    main.-valign
+      .container
+        h2.-centered
+          | Thanks!
+          br
+          | We'll be in touch
+        p.emoji.-centered 🎉

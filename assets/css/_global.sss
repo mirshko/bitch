@@ -1,7 +1,7 @@
 :root
-  --system: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  --system: system-ui
   --spectral: 'Spectral', serif
-  --black: #000
+  --black: #111517
   --white: #fff
   --accent: #f4a2c4
   --accent-light: rgba(var(--accent), 0.08)
@@ -15,9 +15,29 @@
 body
   margin: 0
   padding: 2rem
+
+.layout
   display: flex
-  min-height: 100vh
   flex-direction: column
+  min-height: 100vh
+
+  @media (min-width: 960px)
+    display: grid
+    grid-template-columns: 25% 1fr
+    grid-template-rows: 1fr
+    grid-gap: 2rem
+
+.sidebar
+  text-align: center
+  display: flex
+  flex-direction: column
+
+  & > .item
+    margin-bottom: 1rem
+
+    &:first-of-type
+      margin-bottom: 2rem
+
 
 html
   font-family: var(--system)
@@ -26,10 +46,9 @@ html
   max-font-size: var(--max-fontsize)
   min-font-size: var(--fontsize)
 
-a:not(.btn)
-  font-family: var(--spectral)
-  color: var(--black)
+a
   text-decoration: none
+  color: var(--black)
 
   &:hover
     color: var(--accent)
@@ -42,51 +61,21 @@ h5,
 h6
   font-family: var(--spectral)
   line-height: 1.2
-  margin: 0
 
-  &.system-font
-    font-family: var(--system)
-    font-weight: normal
-
-.smol
-  font-size: .6em
+nav
+  display: flex
+  flex-direction: column
 
 p
   line-height: 1.5
 
-header
-  display: flex
-  flex-direction: column
-  align-items: center
+.brand
+  margin: 0
+  font-size: responsive 2rem 4rem
 
-  & h1
-    text-align: center
-    font-size: responsive 2rem 4rem
-
-    & span
-      display: block
-      font-size: 2rem
-
-  & a
-    margin-top: 1rem
-
-  &.-smaller
-    & h1
-      font-size: responsive 1.5rem 3rem
-
-      & span
-        font-size: 1.5rem
-
-main
-  flex: 1
-
-  &.-valign
-    display: flex
-    align-items: center
-
-footer
-  & p
-    color: rgba(var(--black), 0.16)
+  & span
+    display: block
+    font-size: 2rem
 
 .emoji
   font-size: responsive 2rem 3rem
@@ -98,6 +87,14 @@ footer
   width: 100%
   margin: 0 auto
   position: relative
+
+
+.-valign
+  display: flex
+  align-items: center
+
+  @media (min-width: 960px)
+    flex: 1
 
 p,
 h1,

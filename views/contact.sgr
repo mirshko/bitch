@@ -1,10 +1,8 @@
 extends(src='layout.sgr')
-  block(name='header')
-    header.-smaller
-      a(href='/')
-        h1
-          | Bitch
-          span Coffee
+  block(name='title')
+    title Contact | Bitch Coffee
   block(name='content')
-    .container
-      include(src="_form.sgr")
+    main.-valign
+      .container
+        h2 Contact
+        include(src="_form.sgr")
