@@ -28,14 +28,18 @@ html
   body
     block(name='header')
       header
-        h1 Bitch
-        h2 Coffee
+        a(href='/')
+          h1
+            | Bitch
+            span Coffee
 
     main.-valign(role='main' id='{{ pageId }}')
       block(name='content')
 
     footer
       p.-centered © 2017 Bitch Coffee
+      p.-centered
+        a(href="/contact") Contact us
 
     // block(name='javascript')
     //   script(src='js/main.js' defer)

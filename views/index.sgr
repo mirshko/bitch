@@ -1,4 +1,8 @@
 extends(src='layout.sgr')
   block(name='content')
     .container
-      include(src="_form.sgr")
+      h3
+       a(href='https://www.urbandictionary.com/define.php?term=bitch%20coffee') Bitch Coffee
+      h4.system-font(style="margin-top: .5em") [bich kof-ee]
+      p
+        em Bitch coffee is any coffee drink that is not black. Coffee with cream and sugar is bitch coffee. Coffee with milk or anything in it is bitch coffee. Mochas and lattes are as bitchiest as they get.

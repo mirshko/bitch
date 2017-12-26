@@ -1,8 +1,10 @@
 extends(src='layout.sgr')
   block(name='header')
     header.-smaller
-      h1 Bitch
-      h2 Coffee
+      a(href='/')
+        h1
+          | Bitch
+          span Coffee
   block(name='title')
     title Cheers!
   block(name='content')

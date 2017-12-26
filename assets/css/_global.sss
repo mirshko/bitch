@@ -26,6 +26,14 @@ html
   max-font-size: var(--max-fontsize)
   min-font-size: var(--fontsize)
 
+a:not(.btn)
+  font-family: var(--spectral)
+  color: var(--black)
+  text-decoration: none
+
+  &:hover
+    color: var(--accent)
+
 h1,
 h2,
 h3,
@@ -36,17 +44,28 @@ h6
   line-height: 1.2
   margin: 0
 
+  &.system-font
+    font-family: var(--system)
+    font-weight: normal
+
+.smol
+  font-size: .6em
+
+p
+  line-height: 1.5
+
 header
   display: flex
   flex-direction: column
   align-items: center
 
   & h1
+    text-align: center
     font-size: responsive 2rem 4rem
 
-  & h2
-    margin: 0
-    font-size: 2rem
+    & span
+      display: block
+      font-size: 2rem
 
   & a
     margin-top: 1rem
@@ -55,8 +74,8 @@ header
     & h1
       font-size: responsive 1.5rem 3rem
 
-    & h2
-      font-size: 1.5rem
+      & span
+        font-size: 1.5rem
 
 main
   flex: 1
@@ -69,7 +88,6 @@ footer
   & p
     font-size: .8rem
     color: rgba(var(--black), 0.16)
-
 
 .emoji
   font-size: responsive 2rem 3rem

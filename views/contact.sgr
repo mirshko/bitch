@@ -1,0 +1,10 @@
+extends(src='layout.sgr')
+  block(name='header')
+    header.-smaller
+      a(href='/')
+        h1
+          | Bitch
+          span Coffee
+  block(name='content')
+    .container
+      include(src="_form.sgr")
