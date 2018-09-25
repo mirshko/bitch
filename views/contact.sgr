@@ -1,8 +1,0 @@
-extends(src='layout.sgr')
-  block(name='title')
-    title Contact | Bitch Coffee
-  block(name='content')
-    main.-valign
-      .container
-        h2 Contact
-        include(src="_form.sgr")

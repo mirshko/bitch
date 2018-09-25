@@ -1,39 +1,25 @@
 {
-  "name": "bitch",
-  "description": "bitch coffee website",
-  "version": "0.0.1",
-  "author": "mirshko",
-  "ava": {
-    "verbose": "true"
-  },
-  "bugs": "https://github.com/mirshko/bitch/issues",
+  "name": "bitch-coffee",
+  "description": "Bitch Coffee",
+  "version": "1.0.0",
+  "author": "",
   "dependencies": {
-    "reshape-standard": "^3.0.0",
-    "spike": "^2.0.0",
-    "spike-css-standards": "^3.0.0",
-    "spike-js-standards": "^2.0.2",
-    "spike-optimize": "^0.1.2",
-    "spike-page-id": "^1.0.0",
-    "sugarml": "^0.6.0",
-    "sugarss": "^1.0.0"
+    "gatsby": "^2.0.0",
+    "gatsby-plugin-manifest": "^2.0.2",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0"
+  },
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'"
   },
   "devDependencies": {
-    "ava": "^0.19.1",
-    "rimraf": "^2.6.1",
-    "snazzy": "^7.0.0",
-    "standard": "^10.0.2"
-  },
-  "homepage": "https://github.com/mirshko/bitch",
-  "main": "app.js",
-  "private": true,
-  "repository": "https://github.com/mirshko/bitch",
-  "scripts": {
-    "lint": "standard | snazzy",
-    "precommit": "npm run lint -s",
-    "pretest": "npm run lint -s",
-    "test": "NODE_ENV=test ava",
-    "start": "spike watch",
-    "build": "spike compile",
-    "prod": "NODE_ENV=production spike compile -e production"
+    "prettier": "^1.14.2"
   }
 }
