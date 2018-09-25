@@ -5,7 +5,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
         name: "Bitch Coffee",
         short_name: "Bitch",
@@ -21,10 +21,11 @@ module.exports = {
       options: {
         google: {
           families: ["Spectral:800"],
-          text: "abcdefghijklmnopqrstuvwxyz!"
+          text: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!"
         }
       }
     },
-    "gatsby-plugin-offline"
+    "gatsby-plugin-offline",
+    "gatsby-plugin-netlify"
   ]
 };
