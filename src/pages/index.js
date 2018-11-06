@@ -4,11 +4,11 @@ import Layout from "../components/Layout";
 
 const IndexPage = () => (
   <Layout>
-    <a href="https://www.instagram.com/bitch.coffee/">
-      <h1>
+    <h1>
+      <a href="https://www.instagram.com/bitch.coffee/">
         Bitch <span>Coffee</span>
-      </h1>
-    </a>
+      </a>
+    </h1>
   </Layout>
 );
 

@@ -1,18 +1,10 @@
 html {
   box-sizing: border-box;
-  font-size: calc(18px + 6 * ((100vw - 420px) / 860));
+  font-size: calc(1vw + 1vh + 0.5vmin);
 }
 
-@media screen and (min-width: 1280px) {
-  html {
-    font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  html {
-    font-size: 18px;
-  }
+@media (max-width: 480px) {
+  font-size: calc(0.75vw + 0.75vh + 0.25vmin);
 }
 
 *,
@@ -24,7 +16,7 @@ html {
 body {
   color: #000;
   margin: 0;
-  font-family: "Spectral", sans-serif;
+  font-family: "Spectral", Times, serif;
   background: #fbfbfd;
   display: grid;
   height: 100vh;
@@ -34,27 +26,12 @@ body {
 h1 {
   text-align: center;
   line-height: 1.2;
+  font-size: 4rem;
   margin: 0;
-  font-size: calc(
-    2rem + 2 * ((100vw - 23.333333333333332rem) / 47.777777777777786)
-  );
 }
 
-@media screen and (min-width: 1280px) {
-  h1 {
-    font-size: 4rem;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
-
-h1 > span {
+h1 span {
   display: block;
-  font-size: 2rem;
 }
 
 a {
