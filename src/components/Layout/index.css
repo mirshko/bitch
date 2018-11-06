@@ -1,3 +1,20 @@
+:root {
+  --black: #111517;
+  --white: #fffeff;
+  --pink: #f4a2c4;
+
+  --accent: var(--pink);
+  --color: var(--black);
+  --background: var(--white);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: var(--white);
+    --background: var(--black);
+  }
+}
+
 html {
   box-sizing: border-box;
   font-size: calc(1vw + 1vh + 0.5vmin);
@@ -14,10 +31,10 @@ html {
 }
 
 body {
-  color: #000;
+  color: var(--color);
   margin: 0;
   font-family: "Spectral", Times, serif;
-  background: #fbfbfd;
+  background: var(--background);
   display: grid;
   height: 100vh;
   place-content: center;
@@ -35,10 +52,10 @@ h1 span {
 }
 
 a {
-  color: #000;
+  color: var(--color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #f4a2c4;
+  color: var(--accent);
 }
