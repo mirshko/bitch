@@ -1,4 +1,6 @@
 {
   "type": "static",
-  "public": true
+  "public": true,
+  "name": "bitch",
+  "alias": "bitch.coffee"
 }
