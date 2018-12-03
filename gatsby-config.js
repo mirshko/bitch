@@ -24,7 +24,6 @@ module.exports = {
           text: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!"
         }
       }
-    },
-    "gatsby-plugin-offline"
+    }
   ]
 };
