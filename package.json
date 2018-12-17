@@ -2,26 +2,9 @@
   "name": "bitch-coffee",
   "description": "Bitch Coffee",
   "version": "1.0.0",
-  "author": "",
-  "dependencies": {
-    "gatsby": "^2.0.40",
-    "gatsby-plugin-manifest": "^2.0.7",
-    "gatsby-plugin-react-helmet": "^3.0.1",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-helmet": "^5.2.0"
-  },
+  "author": "mirshko <jeff@reiner.design>",
+  "dependencies": {},
   "license": "UNLICENSED",
-  "scripts": {
-    "now-build": "npm run build && mv public dist",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'"
-  },
-  "devDependencies": {
-    "prettier": "^1.14.2"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mirshko/bitch.git"

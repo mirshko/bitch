@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bitch Coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="./bitch-logo.png" />
+    <style media="screen">
+      :root {
+        --black: #111517;
+        --white: #fffeff;
+        --pink: #f4a2c4;
+
+        --accent: var(--pink);
+        --color: var(--black);
+        --background: var(--white);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --color: var(--white);
+          --background: var(--black);
+        }
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: calc(1vw + 1vh + 0.5vmin);
+      }
+
+      @media (max-width: 480px) {
+        font-size: calc(0.75vw + 0.75vh + 0.25vmin);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      body {
+        color: var(--color);
+        margin: 0;
+        font-family: "Spectral", "Times New Roman", serif;
+        background: var(--background);
+        display: grid;
+        height: 100vh;
+        place-content: center;
+      }
+
+      h1 {
+        text-align: center;
+        line-height: 1.2;
+        font-size: 4rem;
+        margin: 0;
+      }
+
+      h1 span {
+        display: block;
+      }
+
+      a {
+        color: var(--color);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--accent);
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Spectral:800" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>
+      <a href="https://www.instagram.com/bitch.coffee/">
+        Bitch <span>Coffee</span>
+      </a>
+    </h1>
+  </body>
+</html>

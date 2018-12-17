@@ -1,11 +1,5 @@
 {
   "version": 2,
   "name": "bitch",
-  "alias": "bitch.coffee",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build"
-    }
-  ]
+  "alias": "bitch.coffee"
 }
